@@ -1,0 +1,75 @@
+#proj{
+  overflow: hidden;
+  width: 100vw;
+  max-width: 60rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  margin: 0 auto;
+}
+.projTitle{
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+  color: yellow;
+  text-decoration: underline;
+}
+.projDesc{
+  font-weight: 400;
+  font-size: 1.5rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+}
+.projBars{
+  margin: 1.5rem;
+  width: 100vw;
+  max-width: 80%;
+  text-align: left;
+}
+.projBar{
+  display: flex;
+  margin: 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background: rgb(50, 50, 50);
+}
+.projBarImg{
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 2rem;
+}
+.projBarText h2{
+  color: rgb(230, 248, 96);
+}
+.projBarText p{
+  font-weight: 200;
+}
+@media screen and (max-width:720px) {
+  .projBarText>p{
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width:480px) {
+  .projBarText>p{
+    font-size: 3vw;
+  }
+  .projBarImg{
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+  .projBarText>h2{
+    font-size: 5vw;
+
+  }
+  #proj{
+    margin-left:  auto;
+  }
+}
+.new{
+  color: yellow;
+}
